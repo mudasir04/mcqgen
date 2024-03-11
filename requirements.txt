@@ -2,4 +2,8 @@ openai
 langchain
 streamlit
 python-dotenv
+<<<<<<< HEAD
 PyPDF2
+=======
+PyPDF2
+>>>>>>> dfddb5ee761c97db84c4519edd1c14fa035e8f9b
