@@ -32,7 +32,7 @@ st.title("MCQ creator Application with LangChain")
 #create a form using st.forms
 with st.form("user_inputs"):
     #file upload
-    uploaded_file=st.file_uploader("upload a PDF or txt file")
+    uploaded_file=st.file_uploader("Upload a PDF or txt file", type=['pdf','txt'])
 
     #input fields
     mcq_count=st.number_input("No. of MCQs, min_value=3, max_value=50")
@@ -86,7 +86,7 @@ with st.form("user_inputs"):
                             #Display the review in a text box as well
                             st.text_area(label="Review", value=response["review"])
                         else:
-                            st.erro("Error in the table data") 
+                            st.error("Error in the table data") 
 
                     else:
                         st.write(response)           
