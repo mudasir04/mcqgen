@@ -1,0 +1,3 @@
+[2024-03-17 22:19:35,609] 259 langchain_community.chat_models.openai - WARNING - WARNING! temprature is not default parameter.
+                    temprature was transferred to model_kwargs.
+                    Please confirm that temprature is what you intended.
