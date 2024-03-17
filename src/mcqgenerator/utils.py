@@ -1,5 +1,6 @@
 import os
 import json
+import PyPDF2
 import pandas as pd
 import traceback
 
