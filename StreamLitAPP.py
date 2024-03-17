@@ -11,20 +11,9 @@ from src.mcqgenerator.logger import logging
 
 
 
-json_file_path = 'M:\Project_ML\mcqgen\Response.json'
-
-if not os.path.exists('M:\Project_ML\mcqgen\Response.json'):
-    print("Error: JSON file does not exist at the specified path.")
-else:
-    with open('M:\Project_ML\mcqgen\Response.json', 'r') as file:
-        try:
-            RESPONSE_JSON = json.load(file)
-        except json.JSONDecodeError as e:
-            print("Error decoding JSON:", e)
-
 #Loading json file
-#with open('M:\Project_ML\mcqgen\Response.json', 'r') as file:
- #   RESPONSE_JSON= json.load(file)
+with open(r'C:\Users\MUDASIR\mcqgen-4\Response.json', 'r') as file:
+    RESPONSE_JSON= json.load(file)
 
 #creating a title for the app
 st.title("MCQ creator Application with LangChain")
